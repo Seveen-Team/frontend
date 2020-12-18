@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const WrapperHeader = styled.div`
   width: 100vw;
+  height: 8vh;
   background-color: #182c3f;
   display: flex;
   justify-content: space-between;
@@ -28,7 +29,7 @@ const ImgPhoto = styled.img`
 const Name = styled.p`
   color: white;
   font-size: 24px;
-  font-family: sans-serif;
+  font-family: Babes, sans-serif;
   margin-left: 10px;
 `;
 
