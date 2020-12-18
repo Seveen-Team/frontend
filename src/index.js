@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './routes/App';
-import Sidebar from './components/Sidebar';
+import VacanteCard from './components/VacanteCard';
 
-ReactDOM.render(<Sidebar />, document.getElementById('app'));
+ReactDOM.render(<VacanteCard />, document.getElementById('app'));
