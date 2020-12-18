@@ -1,11 +1,8 @@
 import React from 'react';
+import LogoPM from '../../assets/logoPN.png';
 
 const Header = () => {
-  return(
-    <div>
-      Hola mundo
-    </div>
-  );
-}
+  return <img src={LogoPM} />;
+};
 
 export default Header;

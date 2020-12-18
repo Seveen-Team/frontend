@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './routes/App';
-import Username from './components/Username';
+import Header from './components/Header';
 
-ReactDOM.render(<Username />, document.getElementById('app'));
+ReactDOM.render(<Header />, document.getElementById('app'));
