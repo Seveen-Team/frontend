@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './routes/App';
-import VacanteCard from './components/VacanteCard';
+import TrelloCard from './components/TrelloCard';
 
-ReactDOM.render(<VacanteCard />, document.getElementById('app'));
+ReactDOM.render(<TrelloCard />, document.getElementById('app'));
