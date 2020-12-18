@@ -4,7 +4,7 @@ import Sidebar from '../../components/Sidebar';
 import { ContentChild } from './style';
 
 const styles = ({ children }) => {
-  const [action, setAction] = useState(false);
+  const [action, setAction] = useState('');
 
   return (
     <>

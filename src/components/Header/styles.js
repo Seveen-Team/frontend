@@ -6,7 +6,7 @@ const WrapperHeader = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
   box-sizing: border-box;
   width: 100%;
   height: 80px;
@@ -43,10 +43,11 @@ const WrapperUser = styled.div`
   background-color: transparent;
   border-radius: 30px;
   padding: 5px 15px 5px 5px;
+  cursor: pointer;
   &:hover{
     background-color: ${props => props.theme.hover};
   }
-  @media screen and (max-width: 578px) and (orientation: portrait) {
+  @media screen and (max-width: 578px) {
     display: none;
   }
 `;
@@ -87,6 +88,7 @@ const BurgerButton = styled.button`
   justify-content: center;
   align-items: center;
   outline: none;
+  cursor: pointer;
   &:hover, :focus {
     background-color: ${props => props.theme.hover};
   }
