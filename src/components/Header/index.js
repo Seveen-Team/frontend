@@ -1,20 +1,40 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import {
+  WrapperHeader,
+  ImgLogo,
+  WrapperUser,
+  ImgPhoto,
+  Name,
+  Icon,
+  BurgerButton,
+  BurgerIcon
+} from './styles';
+import Variables from '../../styles/vars';
 import LogoPM from '../../assets/logoPM.png';
 import Photo from '../../assets/hero.jpg';
-import { WrapperHeader, ImgLogo, WrapperUser, ImgPhoto, Name } from './styles';
 
-class Header extends React.Component {
-  render() {
-    return (
+const Header = ({ open, action }) => {
+
+  const handleOpen = () => {
+    action('true');
+  }
+
+  return (
+    <ThemeProvider theme={Variables}>
       <WrapperHeader>
         <ImgLogo src={LogoPM} />
+        <BurgerButton onClick={handleOpen}>
+          <BurgerIcon />
+        </BurgerButton>
         <WrapperUser>
           <ImgPhoto src={Photo} />
-          <Name>Pepito perez</Name>
+          <Name>Pepito perez shbdshgds</Name>
+          <Icon />
         </WrapperUser>
       </WrapperHeader>
-    );
-  }
+    </ThemeProvider>
+  );
 }
 
 export default Header;

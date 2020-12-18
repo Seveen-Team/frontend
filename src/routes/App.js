@@ -1,13 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Layout from '../containers/Layout';
 import Header from '../components/Header';
+import TrelloCard from '../components/TrelloCard';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route exact path='/' component={Header} />
-      </Switch>
+      <Layout>
+        <Switch>
+          <Route exact path='/' component={TrelloCard} />
+        </Switch>
+      </Layout>
     </BrowserRouter>
   );
 }
