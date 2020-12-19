@@ -6,7 +6,6 @@ import {
   WrapperUser,
   ImgPhoto,
   Name,
-  Icon,
   BurgerButton,
   BurgerIcon
 } from './styles';
