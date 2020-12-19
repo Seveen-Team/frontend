@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
 export const Vacancies = styled.div`
-  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 `;

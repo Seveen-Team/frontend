@@ -3,9 +3,13 @@ import styled from 'styled-components';
 const WrapperCard = styled.div`
   padding: 10px;
   width: 30vw;
-  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
   text-align: center;
-  box-shadow: 3px 3px 10px black;
+  height: 350px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 `;
 
 const WrapperLevel = styled.div`
@@ -17,6 +21,9 @@ const WrapperLevel = styled.div`
 const WrapperBase = styled.div`
   text-align: center;
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const WrapperItem = styled.div`
@@ -42,7 +49,7 @@ const Text = styled.p`
 `;
 
 const Info = styled.button`
-  margin: 10px;
+  margin: 10px auto;
   font-family: Babes, sans-serif;
   font-size: 26px;
   border-radius: 50px;
@@ -52,6 +59,7 @@ const Info = styled.button`
   color: #182c3f;
   width: 70%;
   height: 50px;
+  cursor: pointer;
 `;
 
 export {

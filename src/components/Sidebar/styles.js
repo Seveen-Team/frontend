@@ -33,6 +33,7 @@ const Anchor = styled(Link)`
   width: 100%;
   text-decoration: none;
   padding: 10px;
+  display: inline-block;
   
   &:hover {
     Background-color: #98CA3E;
