@@ -1,10 +1,22 @@
 import React from 'react';
-import { WrapperSidebar, Anchor, Text, CloseButton, ListContent } from './styles';
+import { 
+  WrapperSidebar,
+  Anchor,
+  Text,
+  CloseButton, 
+  ListContent,
+  Button
+} from './styles';
 
 const Sidebar = ({ open, action }) => {
 
   const handleClose = () => {
     action('false');
+  }
+
+  const handleLogout = () => {
+    localStorage.clear();
+    location.reload();
   }
 
   return (
@@ -13,15 +25,20 @@ const Sidebar = ({ open, action }) => {
         X
       </CloseButton>
       <ListContent>
-        <Anchor to="/">
+        <Anchor to="/" onClick={handleClose}>
           <Text>Dashboard</Text>
         </Anchor>
-        <Anchor to="/vacancies">
+        <Anchor to="/vacancies" onClick={handleClose}>
           <Text>Vacantes</Text>
         </Anchor>
-        <Anchor to="/applications">
+        <Anchor to="/applications" onClick={handleClose}>
           <Text>Mis aplicaciones</Text>
         </Anchor>
+      </ListContent>
+      <ListContent>
+        <Button type='button' onClick={handleLogout}>
+          <Text>Cerrar sesiòn</Text>
+        </Button>
       </ListContent>
     </WrapperSidebar>
   );

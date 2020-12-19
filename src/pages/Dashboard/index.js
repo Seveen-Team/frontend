@@ -1,10 +1,11 @@
 import React from 'react';
+import { Title } from './styles';
 
 const Dashboard = () => {
   return (
-    <div>
-      <h1>Dashboard</h1>
-    </div>
+    <>
+      <Title>Dashboard</Title>
+    </>
   );
 };
 

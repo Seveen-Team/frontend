@@ -43,10 +43,6 @@ const WrapperUser = styled.div`
   background-color: transparent;
   border-radius: 30px;
   padding: 5px 15px 5px 5px;
-  cursor: pointer;
-  &:hover{
-    background-color: ${props => props.theme.hover};
-  }
   @media screen and (max-width: 578px) {
     display: none;
   }
