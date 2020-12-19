@@ -4,10 +4,10 @@ import { WrapperSidebar, Anchor, Text } from './styles';
 const Sidebar = () => {
   return (
     <WrapperSidebar>
-      <Anchor to="/">
+      <Anchor to="/vacancies">
         <Text>Vacantes</Text>
       </Anchor>
-      <Anchor to="/test">
+      <Anchor to="/">
         <Text>Mis aplicaciones</Text>
       </Anchor>
     </WrapperSidebar>
