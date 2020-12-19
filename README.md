@@ -10,4 +10,5 @@ SeveTeam usa los siguientes lenguajes para el desarrollo del front end:
 * React.js
 * Styled-Components
 * Figma
+* Figma
 * Git & Github
