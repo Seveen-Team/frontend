@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const WrapperTrelloCard = styled.div`
   border-radius: 30px;
-  width: 25vw;
+  width: 100px;
   height: 25vh;
   background-color: #c4c4c4;
 `;

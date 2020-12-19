@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './routes/App';
-import TrelloCard from './components/TrelloCard';
+import { Provider } from 'react-redux';
+import GlobalStyles from './styles/GloblalStyles';
+import App from './routes/App';
+import Store from './store/index';
 
-ReactDOM.render(<TrelloCard />, document.getElementById('app'));
+ReactDOM.render(
+  <Provider store={Store}>
+    <GlobalStyles />
+    <App />
+  </Provider>,
+  document.getElementById('app')
+);
