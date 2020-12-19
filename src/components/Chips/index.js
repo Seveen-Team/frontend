@@ -10,8 +10,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     flexWrap: 'wrap',
     listStyle: 'none',
-    padding: theme.spacing(0.5),
     margin: 0,
+    boxShadow: 'none',
   },
   chip: {
     margin: theme.spacing(0.5),
