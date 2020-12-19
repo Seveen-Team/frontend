@@ -55,6 +55,7 @@ export const Button = styled.button`
   font-weight: 700;
   font-size: 18px;
   padding: 7.5px 15px;
+  cursor: pointer;
 `;
 
 export const Container = styled.section`
