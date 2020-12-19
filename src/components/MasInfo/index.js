@@ -1,7 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 import InfoDetallada from '../InfoDetallada';
 import Chips from '../Chips';
-import styled from 'styled-components';
 
 const WrapperMasInfo = styled.div`
   width: 100%;

@@ -24,3 +24,8 @@ export const Subtitle = styled.h2`
   background-color: #182c3f;
   color: white;
 `;
+
+export const List = styled.ul`
+  padding: 10px 20px;
+  list-style: none;
+`;
