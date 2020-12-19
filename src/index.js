@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import GlobalStyles from './styles/GloblalStyles';
-import App from './routes/App';
+// import App from './routes/App';
+import AgregarVacante from './components/AgregarVacante';
 
 ReactDOM.render(
   <>
     <GlobalStyles />
-    <App />
-  </>, 
-  document.getElementById('app'));
+    <AgregarVacante />
+  </>,
+  document.getElementById('app')
+);
