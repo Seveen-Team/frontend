@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
+import { useDispatch } from 'react-redux';
 import Variables from '../../styles/vars';
 import { Form, Image, Input, Button, Anchor, Container } from './styles';
 import logo from '../../assets/logoPM.png';
+import { loginUser } from '../../actions/loginAction';
 
 const LoginForm = () => {
+  const dispatch = useDispatch();
   const [form, setForm] = useState({
     username: '',
   });
@@ -18,16 +21,28 @@ const LoginForm = () => {
 
   const handleLogin = (event) => {
     event.preventDefault();
-    console.log(form);
+    dispatch(loginUser(form, '/'));
   }
 
   return (
     <ThemeProvider theme={Variables}>
-      <Form onSubmit={handleLogin}>
+      <Form onSubmit={handleLogin} autoComplete='off'>
         <Image src={logo} />
         <Container>
-          <Input placeholder='Usuario' type='text' name='username' onChange={handleChange} />
-          <Input placeholder='Contraseña' type='password' name='password' onChange={handleChange} />
+          <Input
+            placeholder='Usuario'
+            type='text'
+            name='username'
+            onChange={handleChange}
+            autoComplete='off' 
+          />
+          <Input
+            placeholder='Contraseña'
+            type='password'
+            name='password'
+            onChange={handleChange}
+            autoComplete='off' 
+          />
         </Container>
         <Container>
           <Anchor to='/'>¿Olvidaste tu contraseña?</Anchor>
