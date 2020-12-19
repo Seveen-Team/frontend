@@ -24,6 +24,7 @@
     ],
     "import/newline-after-import": "error",
     "import/prefer-default-export": "off",
+    "react/no-array-index-key": "off",
     "arrow-body-style": 0
   },
   "globals": {
