@@ -1,29 +1,17 @@
 import React from 'react';
 import InputLabel from '../InputLabel';
-import styled from 'styled-components';
+import BigInput from '../BigInput';
+import {
+  WrapperModal,
+  WrapperTitle,
+  WrapperInputLabels,
+  WrapperBottom,
+  WrapperButtom,
+  TitleModal,
+  Bottom,
+} from './styles';
 
-const WrapperModal = styled.div`
-  border: 1px solid green;
-  width: 40%;
-  height: 30%;
-  padding: 20px;
-`;
-
-const WrapperTitle = styled.div``;
-
-const WrapperInputLabels = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-`;
-
-const TitleModal = styled.p`
-  color: #182c3f;
-  font-size: 34px;
-  font-family: Babes, sans-serif;
-`;
-
-const AgregarVacante = (props) => {
+const AgregarVacante = () => {
   return (
     <WrapperModal>
       <WrapperTitle>
@@ -37,6 +25,13 @@ const AgregarVacante = (props) => {
         <InputLabel />
         <InputLabel />
       </WrapperInputLabels>
+      <WrapperBottom>
+        <BigInput />
+        <BigInput />
+      </WrapperBottom>
+      <WrapperButtom>
+        <Bottom>Agrega propuesta </Bottom>
+      </WrapperButtom>
     </WrapperModal>
   );
 };
