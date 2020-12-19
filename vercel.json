@@ -1,6 +1,6 @@
 {
 	"version": 2,
-	"name": "sevenTeam",
+	"name": "seveen-team",
 	"builds": [
 		{ "use": "@now/static-build", "src": "package.json" }
 	],
