@@ -14,9 +14,12 @@ const Sidebar = ({ open, action }) => {
       </CloseButton>
       <ListContent>
         <Anchor to="/">
+          <Text>Dashboard</Text>
+        </Anchor>
+        <Anchor to="/vacancies">
           <Text>Vacantes</Text>
         </Anchor>
-        <Anchor to="/test">
+        <Anchor to="/applications">
           <Text>Mis aplicaciones</Text>
         </Anchor>
       </ListContent>
