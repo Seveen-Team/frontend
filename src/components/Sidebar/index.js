@@ -13,13 +13,13 @@ const Sidebar = ({ open, action }) => {
         X
       </CloseButton>
       <ListContent>
-        <Anchor to="/">
+        <Anchor to="/" onClick={handleClose}>
           <Text>Dashboard</Text>
         </Anchor>
-        <Anchor to="/vacancies">
+        <Anchor to="/vacancies" onClick={handleClose}>
           <Text>Vacantes</Text>
         </Anchor>
-        <Anchor to="/applications">
+        <Anchor to="/applications" onClick={handleClose}>
           <Text>Mis aplicaciones</Text>
         </Anchor>
       </ListContent>

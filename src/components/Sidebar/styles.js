@@ -8,7 +8,7 @@ const WrapperSidebar = styled.div`
   left: 0;
   z-index: 2;
   height: calc(100vh - 80px);
-  box-shadow: 10px 0px 15px rgba(0,0,0,0.3);
+  box-shadow:5px 0px 10px rgba(0,0,0,0.3);
   width: 220px;
   padding-top: 20px;
   background-color: ${props =>props.theme.white} !important;
