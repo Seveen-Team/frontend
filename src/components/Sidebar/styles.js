@@ -8,10 +8,13 @@ const WrapperSidebar = styled.div`
   left: 0;
   z-index: 2;
   height: calc(100vh - 80px);
-  box-shadow: 10px 0px 15px rgba(0,0,0,0.3);
+  box-shadow:5px 0px 10px rgba(0,0,0,0.3);
   width: 220px;
   padding-top: 20px;
   background-color: ${props =>props.theme.white} !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @media screen and (max-width: 578px) {
     top: 0;
     height: 100vh;
@@ -39,7 +42,18 @@ const Anchor = styled(Link)`
     Background-color: #98CA3E;
     box-shadow: 10px 0px 15px rgba(0,0,0,0.3);
   }
+`;
 
+const Button = styled(Link)`
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+  &:hover {
+    Background-color: #98CA3E;
+    box-shadow: 10px 0px 15px rgba(0,0,0,0.3);
+  }
 `;
 
 const Text = styled.span`
@@ -75,4 +89,4 @@ const ListContent = styled.section`
   }
 `;
 
-export { WrapperSidebar, Anchor, Text, CloseButton, ListContent };
+export { WrapperSidebar, Anchor, Text, CloseButton, Button, ListContent };

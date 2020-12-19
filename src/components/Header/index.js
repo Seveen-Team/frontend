@@ -31,7 +31,6 @@ const Header = ({ action }) => {
         <WrapperUser>
           <ImgPhoto src={PhotoProfile} />
           <Name>Pepito perez shbdshgds</Name>
-          <Icon />
         </WrapperUser>
       </WrapperHeader>
     </ThemeProvider>

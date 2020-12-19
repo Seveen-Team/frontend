@@ -1,10 +1,11 @@
 import React from 'react';
+import { Title } from './styles';
 
 const Applications = () => {
   return (
-    <div>
-      <h1>Applications</h1>
-    </div>
+    <>
+      <Title>Applications</Title>
+    </>
   );
 };
 
