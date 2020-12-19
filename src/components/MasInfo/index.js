@@ -22,6 +22,11 @@ const WrapperRight = styled.div`
   padding-left: 35px;
 `;
 
+const WrapperBase = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
 const Title = styled.p`
   width: 90%;
   padding: 5px;
@@ -40,6 +45,19 @@ const List = styled.ul``;
 
 const Item = styled.li`
   margin-top: 15px;
+`;
+
+const Bottom = styled.button`
+  margin-top: 15px;
+  font-family: Babes, sans-serif;
+  font-size: 26px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: #98ca3e;
+  color: #182c3f;
+  width: 40%;
+  height: 50px;
 `;
 
 const MasInfo = () => {
@@ -73,6 +91,9 @@ const MasInfo = () => {
           </List>
         </WrapperRight>
       </WrapperColumns>
+      <WrapperBase>
+        <Bottom>Agregar </Bottom>
+      </WrapperBase>
     </WrapperMasInfo>
   );
 };
