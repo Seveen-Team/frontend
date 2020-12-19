@@ -14,11 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
-<<<<<<< HEAD
     "@material-ui/icons": "^4.11.2",
-=======
     "axios": "^0.21.0",
->>>>>>> fd557ea67ff1a27bf86c0f1e8625150882c20558
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
