@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import GlobalStyles from './styles/GloblalStyles';
-// import App from './routes/App';
-import AgregarVacante from './components/AgregarVacante';
+import App from './routes/App';
+import Store from './store/index';
 
 ReactDOM.render(
-  <>
+  <Provider store={Store}>
     <GlobalStyles />
-    <AgregarVacante />
-  </>,
+    <App />
+  </Provider>,
   document.getElementById('app')
 );
