@@ -44,13 +44,15 @@ const Anchor = styled(Link)`
   }
 `;
 
-const Button = styled(Link)`
+const Button = styled.button`
   width: 100%;
   text-decoration: none;
   padding: 10px;
   display: inline-block;
   margin-bottom: 10px;
-  &:hover {
+  border: none;
+  outline: none;
+  &:hover, :focus {
     Background-color: #98CA3E;
     box-shadow: 10px 0px 15px rgba(0,0,0,0.3);
   }

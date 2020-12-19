@@ -1,10 +1,26 @@
 import React from 'react';
-import { Title } from './styles';
+import {
+  Title,
+  ApplicationsContainer,
+  ListContainer,
+  Subtitle,
+} from './styles';
 
 const Applications = () => {
   return (
     <>
-      <Title>Applications</Title>
+      <Title>Aplicaciones</Title>
+      <ApplicationsContainer>
+        <ListContainer>
+          <Subtitle>Me interesan</Subtitle>
+        </ListContainer>
+        <ListContainer>
+          <Subtitle>En Proceso</Subtitle>
+        </ListContainer>
+        <ListContainer>
+          <Subtitle>Finalizado</Subtitle>
+        </ListContainer>
+      </ApplicationsContainer>
     </>
   );
 };

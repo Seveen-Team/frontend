@@ -35,3 +35,19 @@ export const fetchVacancies = () => {
       .catch(({ message }) => dispatch(fetchVacanciesFailure(message)));
   }
 }
+
+export const sendInterest = (id) => {
+  return(dispatch) => {
+    axios({
+      url: `https://seventeam.herokuapp.com/api/v1/user/${localStorage.getItem('user')}`,
+      method: 'patch',
+      data: {
+        myVacants: {
+          interested: id
+        }
+      }
+    })
+      .then(data => null)
+      .catch(error=>dispatch(fetchVacanciesFailure(error.message)));
+  }
+}

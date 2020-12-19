@@ -26,8 +26,9 @@ export const loginUser = ({ username, password }, redirectUrl) => {
         password
       }
     })
-    .then(({ data: { token }}) => {
+    .then(({ data: { body: { token, id } }}) => {
       localStorage.setItem('token', token);
+      localStorage.setItem('user', id);
       dispatch(loginSuccess(token));
     })
     .then(() => {

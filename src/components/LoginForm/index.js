@@ -15,8 +15,8 @@ const LoginForm = () => {
     setForm({
       ...form,
       [event.target.name]: event.target.value,
-    })
-  }
+    });
+  };
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -30,27 +30,27 @@ const LoginForm = () => {
         <Image src={Logo} />
         <Container>
           <Input
-            placeholder='Usuario'
-            type='text'
-            name='username'
+            placeholder="Usuario"
+            type="text"
+            name="username"
             onChange={handleChange}
-            autoComplete='off' 
+            autoComplete="off"
           />
           <Input
-            placeholder='Contraseña'
-            type='password'
-            name='password'
+            placeholder="Contraseña"
+            type="password"
+            name="password"
             onChange={handleChange}
-            autoComplete='off' 
+            autoComplete="off"
           />
         </Container>
         <Container>
-          <Anchor to='/'>¿Olvidaste tu contraseña?</Anchor>
+          <Anchor to="/login">¿Olvidaste tu contraseña?</Anchor>
           <Button typ>Iniciar sesión</Button>
         </Container>
-      </Form>    
+      </Form>
     </ThemeProvider>
   );
-}
+};
 
 export default LoginForm;

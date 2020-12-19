@@ -15,7 +15,7 @@ import {
   Button
 } from './styles';
 
-const VacanteCard = ({ description, language, location, modality, profile, requirements, title, url }) => {
+const VacanteCard = ({ id, description, language, location, modality, profile, requirements, title, url }) => {
   const [modal, setModal] = useState({
     isOpen: false,
   });
@@ -83,6 +83,7 @@ const VacanteCard = ({ description, language, location, modality, profile, requi
             </Button>
             {modal.isOpen && (
               <InfoJob
+                id={id}
                 description={description}
                 language={language}
                 location={location}
