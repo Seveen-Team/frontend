@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import GlobalStyles from './styles/GloblalStyles';
 // import App from './routes/App';
-import AgregarVacante from './components/AgregarVacante';
+import MasInfo from './components/MasInfo';
 
 ReactDOM.render(
   <>
     <GlobalStyles />
-    <AgregarVacante />
+    <MasInfo />
   </>,
   document.getElementById('app')
 );
