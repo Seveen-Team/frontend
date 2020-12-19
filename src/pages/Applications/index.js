@@ -4,7 +4,8 @@ import {
   ApplicationsContainer,
   ListContainer,
   Subtitle,
-  List
+  List,
+  Container,
 } from './styles';
 import MasInfo from '../../components/MasInfo/index';
 
@@ -15,33 +16,39 @@ const Applications = () => {
       <ApplicationsContainer>
         <ListContainer>
           <Subtitle>Me interesan</Subtitle>
-          <List>
-            {[1, 2, 3, 4, 5].map((item, index) => (
-              <li key={index}>
-                <h1>Hello</h1>
-              </li>
-            ))}
-          </List>
+          <Container>
+            <List>
+              {[1, 2, 3, 4, 5].map((item, index) => (
+                <li key={index}>
+                  <MasInfo />
+                </li>
+              ))}
+            </List>
+          </Container>
         </ListContainer>
         <ListContainer>
           <Subtitle>En Proceso</Subtitle>
-          <List>
-            {[1, 2, 3, 4, 5].map((item, index) => (
-              <li key={index}>
-                <h1>Hello</h1>
-              </li>
-            ))}
-          </List>
+          <Container>
+            <List>
+              {[1, 2, 3, 4, 5].map((item, index) => (
+                <li key={index}>
+                  <MasInfo />
+                </li>
+              ))}
+            </List>
+          </Container>
         </ListContainer>
         <ListContainer>
           <Subtitle>Finalizado</Subtitle>
-          <List>
-            {[1, 2, 3, 4, 5].map((item, index) => (
-              <li key={index}>
-                <h1>Hello</h1>
-              </li>
-            ))}
-          </List>
+          <Container>
+            <List>
+              {[1, 2, 3, 4, 5].map((item, index) => (
+                <li key={index}>
+                  <MasInfo />
+                </li>
+              ))}
+            </List>
+          </Container>
         </ListContainer>
       </ApplicationsContainer>
     </>
