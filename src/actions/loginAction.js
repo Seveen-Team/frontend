@@ -26,10 +26,10 @@ export const loginUser = ({ username, password }, redirectUrl) => {
         password
       }
     })
-    .then(({ data: { body: { token, id } }}) => {
-      localStorage.setItem('token', token);
-      localStorage.setItem('user', id);
-      dispatch(loginSuccess(token));
+    .then(({ data }) => {
+      localStorage.setItem('token', data.body.token);
+      localStorage.setItem('user', data.body.user._id);
+      dispatch(loginSuccess(data.body.token));
     })
     .then(() => {
       window.location.href = redirectUrl;

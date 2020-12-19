@@ -12,12 +12,13 @@ const WrapperCard = styled.div`
     rgba(24, 44, 63, 1) 0%,
     rgba(152, 202, 62, 1) 56%
   );
+  margin: 0;
 `;
 
 const WrapperImg = styled.div``;
 
 const TitleStats = styled.h1`
-  font-size: 40px;
+  font-size: 34px;
   font-family: Babes, sans-serif;
   margin: 20px;
   color: white;
@@ -32,9 +33,9 @@ const ImgPhoto = styled.img`
 `;
 
 const Text = styled.p`
-  margin: 20px;
+  margin: 16px;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   font-family: Babes, sans-serif;
 `;
 
