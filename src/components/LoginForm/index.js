@@ -30,14 +30,14 @@ const LoginForm = () => {
         <Image src={Logo} />
         <Container>
           <Input
-            placeholder="Usuario"
+            placeholder="agustin@gmail.com"
             type="text"
             name="username"
             onChange={handleChange}
             autoComplete="off"
           />
           <Input
-            placeholder="Contraseña"
+            placeholder="123456"
             type="password"
             name="password"
             onChange={handleChange}
