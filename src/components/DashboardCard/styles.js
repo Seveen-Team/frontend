@@ -18,7 +18,7 @@ const WrapperImg = styled.div``;
 
 const TitleStats = styled.h1`
   font-size: 40px;
-
+  font-family: Babes, sans-serif;
   margin: 20px;
   color: white;
 `;
