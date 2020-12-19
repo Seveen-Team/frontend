@@ -9,38 +9,49 @@ import {
   Info,
 } from './styles';
 
-class VacanteCard extends React.Component {
-  render() {
-    return (
-      <WrapperCard>
-        <WrapperLevel>
-          <WrapperItem>
-            <Title>{this.props.Cargo}</Title>
-            <Text>{this.props.NombreCargo}</Text>
-          </WrapperItem>
-          <WrapperItem>
-            <Title>{this.props.Empresa}</Title>
-            <Text>{this.props.NombreEmpresa}</Text>
-          </WrapperItem>
-        </WrapperLevel>
-        <WrapperLevel>
-          <WrapperItem>
-            <Title>{this.props.Modalida}</Title>
-            <Text>{this.props.NombreModalida}</Text>
-          </WrapperItem>
-          <WrapperItem>
-            <Title>{this.props.Pais}</Title>
-            <Text>{this.props.NombrePais}</Text>
-          </WrapperItem>
-        </WrapperLevel>
-        <WrapperBase>
-          <Title>{this.props.Tecnologias}</Title>
-          <Text>{this.props.NombresTecologias}</Text>
-        </WrapperBase>
-        <Info>Más info ...</Info>
-      </WrapperCard>
-    );
-  }
-}
+const VacanteCard = (props) => {
+  const {
+    Cargo,
+    NombreCargo,
+    Empresa,
+    NombreEmpresa,
+    Modalidad,
+    NombreModalida,
+    Pais,
+    NombrePais,
+    Tecnologias,
+    NombresTecnologias
+  } = props;
+
+  return (
+    <WrapperCard>
+      <WrapperLevel>
+        <WrapperItem>
+          <Title>{Cargo || 'Titulo'}</Title>
+          <Text>{NombreCargo || 'Cargo'}</Text>
+        </WrapperItem>
+        <WrapperItem>
+          <Title>{Empresa || 'Empresa'}</Title>
+          <Text>{NombreEmpresa || 'Nombre Empresa'}</Text>
+        </WrapperItem>
+      </WrapperLevel>
+      <WrapperLevel>
+        <WrapperItem>
+          <Title>{Modalidad || 'Modalidad'}</Title>
+          <Text>{NombreModalida || 'Nombre Modalidad'}</Text>
+        </WrapperItem>
+        <WrapperItem>
+          <Title>{Pais || 'Pais'}</Title>
+          <Text>{NombrePais || 'Nombre Pais'}</Text>
+        </WrapperItem>
+      </WrapperLevel>
+      <WrapperBase>
+        <Title>{Tecnologias || 'Tecnologias'}</Title>
+        <Text>{NombresTecnologias || 'Nombre Tecnologias'}</Text>
+      </WrapperBase>
+      <Info>Más info ...</Info>
+    </WrapperCard>
+  );
+};
 
 export default VacanteCard;
