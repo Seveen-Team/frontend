@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { useDispatch } from 'react-redux';
+import { sendInterest } from '../../actions/vacanciesAction';
 import {
   Modal,
   CardHeader,
@@ -19,7 +21,12 @@ import {
 } from './styles';
 import Label from '../../components/Label';
 
-const InfoJob = ({ onClose, description, language, location, modality, profile, requirements, title, url }) => {
+const InfoJob = ({ onClose, id, description, language, location, modality, profile, requirements, title, url }) => {
+  const dispatch = useDispatch();
+  const handleSave = () => {
+    dispatch(sendInterest(id));
+    onClose();
+  }
   return ReactDOM.createPortal(
     <Modal>
       <Content>
@@ -59,6 +66,7 @@ const InfoJob = ({ onClose, description, language, location, modality, profile, 
         </CardBody>
         <CardFooter>
           <Button
+            onClick={handleSave}
             type='button'           
           >
             Agregar a interesados

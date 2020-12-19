@@ -21,6 +21,7 @@ export default (state = INITIAL_STATE, action) => {
         ...state,
         loading: false,
         vacancies: action.payload,
+        userVacancies: [],
         error: ''
       };
 		case VACANCIES_FAILURE:
@@ -28,8 +29,9 @@ export default (state = INITIAL_STATE, action) => {
         ...state,
         loading: false,
         vacancies: [],
+        userVacancies: [],
         error: action.payload
-			};
+      };
 		default:
 			return state;
 	}

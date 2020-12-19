@@ -23,6 +23,7 @@ const Vacances = () => {
               return(
                 <VacanteCard
                   key={vacancie._id}
+                  id={vacancie._id}
                   description={description}
                   language={language}
                   location={location}

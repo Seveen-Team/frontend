@@ -29,7 +29,7 @@ const Header = ({ action }) => {
         </BurgerButton>
         <WrapperUser>
           <ImgPhoto src={Photo} />
-          <Name>Pepito perez shbdshgds</Name>
+          <Name>Usuario Platzi</Name>
         </WrapperUser>
       </WrapperHeader>
     </ThemeProvider>

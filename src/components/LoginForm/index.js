@@ -45,7 +45,7 @@ const LoginForm = () => {
           />
         </Container>
         <Container>
-          <Anchor to='/'>¿Olvidaste tu contraseña?</Anchor>
+          <Anchor to='/login'>¿Olvidaste tu contraseña?</Anchor>
           <Button typ>Iniciar sesión</Button>
         </Container>
       </Form>    
