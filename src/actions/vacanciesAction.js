@@ -47,7 +47,7 @@ export const sendInterest = (id) => {
         }
       }
     })
-      .then(data => null)
-      .catch(error=>dispatch(fetchVacanciesFailure(error.message)));
+      .then((data) => null)
+      .catch((error)=>dispatch(fetchVacanciesFailure(error.message)));
   }
 }
