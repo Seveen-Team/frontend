@@ -65,7 +65,7 @@ const Name = styled.p`
   max-width: 150px;
   max-height: 24px;
   color: ${props => props.theme.white};
-  font-size: 24px;
+  font-size: 18px;
   font-family: Babes, sans-serif;
   margin-left: 10px;
   overflow: hidden;
