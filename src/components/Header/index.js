@@ -14,7 +14,7 @@ import Variables from '../../styles/vars';
 import LogoPM from '../../assets/logoPM.png';
 import Photo from '../../assets/hero.jpg';
 
-const Header = ({ open, action }) => {
+const Header = ({ action }) => {
 
   const handleOpen = () => {
     action('true');
