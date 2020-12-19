@@ -30,7 +30,6 @@ const Header = ({ action }) => {
         <WrapperUser>
           <ImgPhoto src={Photo} />
           <Name>Pepito perez shbdshgds</Name>
-          <Icon />
         </WrapperUser>
       </WrapperHeader>
     </ThemeProvider>

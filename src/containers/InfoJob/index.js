@@ -17,7 +17,7 @@ import {
   Strong,
   Button
 } from './styles';
-import Label from '../Label';
+import Label from '../../components/Label';
 
 const InfoJob = ({ onClose, description, language, location, modality, profile, requirements, title, url }) => {
   return ReactDOM.createPortal(

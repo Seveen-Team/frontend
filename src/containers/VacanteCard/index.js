@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import Variables from '../../styles/vars';
 import Label from '../../components/Label';
-import InfoJob from '../../components/InfoJob';
+import InfoJob from '../InfoJob';
 import {
   WrapperCard,
   CardHeader,
